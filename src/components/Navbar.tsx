@@ -140,7 +140,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-4 md:px-8 py-4 relative">
       <Link to="/" className="flex items-center gap-3 shrink-0">
-        <img src={logo} alt="Logo CDM Scrabble 2026" className="h-12 w-12 md:h-16 md:w-16 object-contain" />
+        <img src={logo} alt="Logo CDM Scrabble 2026" className="h-12 md:h-16 object-contain" />
       </Link>
 
       {/* Desktop nav */}
