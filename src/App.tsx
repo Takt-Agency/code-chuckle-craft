@@ -4,14 +4,45 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
-import Evenement from "./pages/Evenement.tsx";
-import Competitions from "./pages/Competitions.tsx";
-import Inscriptions from "./pages/Inscriptions.tsx";
-import Hebergement from "./pages/Hebergement.tsx";
-import InfosPratiques from "./pages/InfosPratiques.tsx";
-import Partenaires from "./pages/Partenaires.tsx";
-import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
+
+// Événement
+import Fisf from "./pages/evenement/Fisf.tsx";
+import Comite from "./pages/evenement/Comite.tsx";
+import Historique from "./pages/evenement/Historique.tsx";
+
+// Compétitions
+import Competitions from "./pages/Competitions.tsx";
+import Programme from "./pages/competitions/Programme.tsx";
+import Reglements from "./pages/competitions/Reglements.tsx";
+import Classique from "./pages/competitions/Classique.tsx";
+import Duplicate from "./pages/competitions/Duplicate.tsx";
+import Resultats from "./pages/competitions/Resultats.tsx";
+
+// Inscriptions
+import Inscriptions from "./pages/Inscriptions.tsx";
+
+// Hébergement
+import Hebergement from "./pages/Hebergement.tsx";
+import Verdi from "./pages/hebergement/Verdi.tsx";
+import Reservations from "./pages/hebergement/Reservations.tsx";
+
+// Infos Pratiques
+import Venir from "./pages/infos/Venir.tsx";
+import Rejoindre from "./pages/infos/Rejoindre.tsx";
+import Decouvrir from "./pages/infos/Decouvrir.tsx";
+
+// Partenaires
+import Partenaires from "./pages/Partenaires.tsx";
+import DevenirPartenaire from "./pages/partenaires/DevenirPartenaire.tsx";
+
+// Séjour des Jeunes
+import Descriptif from "./pages/sejour/Descriptif.tsx";
+import Animations from "./pages/sejour/Animations.tsx";
+import Excursions from "./pages/sejour/Excursions.tsx";
+
+// Contact
+import Contact from "./pages/Contact.tsx";
 
 const queryClient = new QueryClient();
 
@@ -23,13 +54,45 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/evenement" element={<Evenement />} />
+
+          {/* Événement */}
+          <Route path="/evenement/fisf" element={<Fisf />} />
+          <Route path="/evenement/comite" element={<Comite />} />
+          <Route path="/evenement/historique" element={<Historique />} />
+
+          {/* Compétitions */}
           <Route path="/competitions" element={<Competitions />} />
+          <Route path="/competitions/programme" element={<Programme />} />
+          <Route path="/competitions/reglements" element={<Reglements />} />
+          <Route path="/competitions/classique" element={<Classique />} />
+          <Route path="/competitions/duplicate" element={<Duplicate />} />
+          <Route path="/competitions/resultats" element={<Resultats />} />
+
+          {/* Inscriptions */}
           <Route path="/inscriptions" element={<Inscriptions />} />
+
+          {/* Hébergement */}
           <Route path="/hebergement" element={<Hebergement />} />
-          <Route path="/infos-pratiques" element={<InfosPratiques />} />
+          <Route path="/hebergement/verdi" element={<Verdi />} />
+          <Route path="/hebergement/reservations" element={<Reservations />} />
+
+          {/* Infos Pratiques */}
+          <Route path="/infos-pratiques/venir" element={<Venir />} />
+          <Route path="/infos-pratiques/rejoindre" element={<Rejoindre />} />
+          <Route path="/infos-pratiques/decouvrir" element={<Decouvrir />} />
+
+          {/* Partenaires */}
           <Route path="/partenaires" element={<Partenaires />} />
+          <Route path="/partenaires/devenir" element={<DevenirPartenaire />} />
+
+          {/* Séjour des Jeunes */}
+          <Route path="/sejour-jeunes/descriptif" element={<Descriptif />} />
+          <Route path="/sejour-jeunes/animations" element={<Animations />} />
+          <Route path="/sejour-jeunes/excursions" element={<Excursions />} />
+
+          {/* Contact */}
           <Route path="/contact" element={<Contact />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
