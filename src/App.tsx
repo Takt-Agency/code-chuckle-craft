@@ -26,6 +26,9 @@ import Inscriptions from "./pages/Inscriptions.tsx";
 import Hebergement from "./pages/Hebergement.tsx";
 import Verdi from "./pages/hebergement/Verdi.tsx";
 import Reservations from "./pages/hebergement/Reservations.tsx";
+import ChambreSingle from "./pages/hebergement/ChambreSingle.tsx";
+import ChambreDouble from "./pages/hebergement/ChambreDouble.tsx";
+import ChambreTwin from "./pages/hebergement/ChambreTwin.tsx";
 
 // Infos Pratiques
 import Venir from "./pages/infos/Venir.tsx";
@@ -74,6 +77,9 @@ const App = () => (
           {/* Hébergement */}
           <Route path="/hebergement" element={<Hebergement />} />
           <Route path="/hebergement/verdi" element={<Verdi />} />
+          <Route path="/hebergement/verdi/chambre-single" element={<ChambreSingle />} />
+          <Route path="/hebergement/verdi/chambre-double" element={<ChambreDouble />} />
+          <Route path="/hebergement/verdi/chambre-twin" element={<ChambreTwin />} />
           <Route path="/hebergement/reservations" element={<Reservations />} />
 
           {/* Infos Pratiques */}
