@@ -55,7 +55,7 @@ const Footer = () => (
               { to: "/infos-pratiques/rejoindre", label: "Rejoindre l'hôtel" },
               { to: "/infos-pratiques/decouvrir", label: "Découvrir la Tunisie" },
               { to: "/partenaires", label: "Partenaires" },
-              { to: "/contact", label: "Contact" },
+              { to: "/contactez-nous", label: "Contactez-nous" },
             ].map((link) => (
               <Link key={link.to} to={link.to} className="text-muted-foreground text-sm hover:text-primary transition-colors">
                 {link.label}
@@ -65,10 +65,30 @@ const Footer = () => (
         </div>
       </AnimatedSection>
 
-      <div className="border-t border-border mt-10 pt-6 text-center">
-        <p className="text-muted-foreground text-xs">
-          © 2026 Championnats du Monde de Scrabble Francophone — Tous droits réservés
-        </p>
+      {/* Legal links + copyright */}
+      <div className="border-t border-border mt-10 pt-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-muted-foreground text-xs order-2 md:order-1">
+            © 2026 Championnats du Monde de Scrabble Francophone — Tous droits réservés
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 order-1 md:order-2">
+            {[
+              { to: "/mentions-legales", label: "Mentions légales" },
+              { to: "/politique-de-confidentialite", label: "Politique de confidentialité" },
+              { to: "/politique-des-cookies", label: "Politique des cookies" },
+              { to: "/plan-du-site", label: "Plan du site" },
+            ].map((link, i, arr) => (
+              <span key={link.to} className="flex items-center gap-4">
+                <Link to={link.to} className="text-muted-foreground text-xs hover:text-primary transition-colors">
+                  {link.label}
+                </Link>
+                {i < arr.length - 1 && (
+                  <span className="text-border text-xs">⎮</span>
+                )}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   </footer>

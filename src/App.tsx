@@ -17,6 +17,8 @@ import Programme from "./pages/competitions/Programme.tsx";
 import Reglements from "./pages/competitions/Reglements.tsx";
 import Classique from "./pages/competitions/Classique.tsx";
 import Duplicate from "./pages/competitions/Duplicate.tsx";
+import DefiMondial from "./pages/competitions/DefiMondial.tsx";
+import DefiJeunes from "./pages/competitions/DefiJeunes.tsx";
 import Resultats from "./pages/competitions/Resultats.tsx";
 
 // Inscriptions
@@ -47,6 +49,12 @@ import Excursions from "./pages/sejour/Excursions.tsx";
 // Contact
 import Contact from "./pages/Contact.tsx";
 
+// Legal
+import MentionsLegales from "./pages/legal/MentionsLegales.tsx";
+import PolitiqueConfidentialite from "./pages/legal/PolitiqueConfidentialite.tsx";
+import PolitiqueCookies from "./pages/legal/PolitiqueCookies.tsx";
+import PlanDuSite from "./pages/legal/PlanDuSite.tsx";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -69,6 +77,8 @@ const App = () => (
           <Route path="/competitions/reglements" element={<Reglements />} />
           <Route path="/competitions/classique" element={<Classique />} />
           <Route path="/competitions/duplicate" element={<Duplicate />} />
+          <Route path="/competitions/defi-mondial" element={<DefiMondial />} />
+          <Route path="/competitions/defi-jeunes" element={<DefiJeunes />} />
           <Route path="/competitions/resultats" element={<Resultats />} />
 
           {/* Inscriptions */}
@@ -98,6 +108,13 @@ const App = () => (
 
           {/* Contact */}
           <Route path="/contact" element={<Contact />} />
+          <Route path="/contactez-nous" element={<Contact />} />
+
+          {/* Legal */}
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="/politique-de-confidentialite" element={<PolitiqueConfidentialite />} />
+          <Route path="/politique-des-cookies" element={<PolitiqueCookies />} />
+          <Route path="/plan-du-site" element={<PlanDuSite />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

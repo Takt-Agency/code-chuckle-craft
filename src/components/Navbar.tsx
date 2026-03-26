@@ -25,6 +25,8 @@ const navItems: NavItem[] = [
       { label: "Règlements", to: "/competitions/reglements" },
       { label: "Épreuves Classique", to: "/competitions/classique" },
       { label: "Épreuves Duplicate", to: "/competitions/duplicate" },
+      { label: "Défi mondial", to: "/competitions/defi-mondial" },
+      { label: "Défi des Jeunes", to: "/competitions/defi-jeunes" },
       { label: "Résultats", to: "/competitions/resultats" },
     ],
   },
@@ -62,6 +64,10 @@ const navItems: NavItem[] = [
       { label: "Animations", to: "/sejour-jeunes/animations" },
       { label: "Excursions", to: "/sejour-jeunes/excursions" },
     ],
+  },
+  {
+    label: "CONTACTEZ-NOUS",
+    to: "/contactez-nous",
   },
 ];
 
@@ -144,7 +150,7 @@ const Navbar = () => {
       </Link>
 
       {/* Desktop nav */}
-      <div className="hidden xl:flex items-center gap-5 2xl:gap-6">
+      <div className="hidden xl:flex items-center gap-5 2xl:gap-6 ml-12 2xl:ml-16">
         {navItems.map((item) => (
           <DesktopDropdown key={item.label} item={item} />
         ))}
