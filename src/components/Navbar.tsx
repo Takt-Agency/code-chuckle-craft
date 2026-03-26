@@ -25,6 +25,8 @@ const navItems: NavItem[] = [
       { label: "Règlements", to: "/competitions/reglements" },
       { label: "Épreuves Classique", to: "/competitions/classique" },
       { label: "Épreuves Duplicate", to: "/competitions/duplicate" },
+      { label: "Défi mondial", to: "/competitions/defi-mondial" },
+      { label: "Défi des Jeunes", to: "/competitions/defi-jeunes" },
       { label: "Résultats", to: "/competitions/resultats" },
     ],
   },

@@ -63,7 +63,10 @@ const PolitiqueConfidentialite = () => (
       <section className="bg-card border border-border rounded-lg p-8 space-y-4">
         <h2 className="font-display text-foreground font-bold text-xl">Destinataires des données</h2>
         <p className="text-muted-foreground text-sm leading-relaxed">
-          Vos données personnelles sont destinées uniquement au comité d'organisation des 54<sup>es</sup> Championnats du Monde de Scrabble Francophone. Elles ne sont pas transmises à des tiers sans votre consentement préalable, sauf obligation légale.
+          Vos données personnelles sont destinées au comité d'organisation des 54<sup>es</sup> Championnats du Monde de Scrabble Francophone. Elles sont traitées par le responsable de la gestion commerciale, membre habilité de la société <span className="text-foreground font-semibold">Skaleet</span>, prestataire technique du site.
+        </p>
+        <p className="text-muted-foreground text-sm leading-relaxed">
+          Elles ne sont pas transmises à d'autres tiers sans votre consentement préalable, sauf obligation légale.
         </p>
       </section>
 
