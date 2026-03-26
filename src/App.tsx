@@ -77,6 +77,9 @@ const App = () => (
           {/* Hébergement */}
           <Route path="/hebergement" element={<Hebergement />} />
           <Route path="/hebergement/verdi" element={<Verdi />} />
+          <Route path="/hebergement/verdi/chambre-single" element={<ChambreSingle />} />
+          <Route path="/hebergement/verdi/chambre-double" element={<ChambreDouble />} />
+          <Route path="/hebergement/verdi/chambre-twin" element={<ChambreTwin />} />
           <Route path="/hebergement/reservations" element={<Reservations />} />
 
           {/* Infos Pratiques */}
