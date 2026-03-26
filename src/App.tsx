@@ -26,6 +26,9 @@ import Inscriptions from "./pages/Inscriptions.tsx";
 import Hebergement from "./pages/Hebergement.tsx";
 import Verdi from "./pages/hebergement/Verdi.tsx";
 import Reservations from "./pages/hebergement/Reservations.tsx";
+import ChambreSingle from "./pages/hebergement/ChambreSingle.tsx";
+import ChambreDouble from "./pages/hebergement/ChambreDouble.tsx";
+import ChambreTwin from "./pages/hebergement/ChambreTwin.tsx";
 
 // Infos Pratiques
 import Venir from "./pages/infos/Venir.tsx";
