@@ -47,6 +47,12 @@ import Excursions from "./pages/sejour/Excursions.tsx";
 // Contact
 import Contact from "./pages/Contact.tsx";
 
+// Legal
+import MentionsLegales from "./pages/legal/MentionsLegales.tsx";
+import PolitiqueConfidentialite from "./pages/legal/PolitiqueConfidentialite.tsx";
+import PolitiqueCookies from "./pages/legal/PolitiqueCookies.tsx";
+import PlanDuSite from "./pages/legal/PlanDuSite.tsx";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -98,6 +104,13 @@ const App = () => (
 
           {/* Contact */}
           <Route path="/contact" element={<Contact />} />
+          <Route path="/contactez-nous" element={<Contact />} />
+
+          {/* Legal */}
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="/politique-de-confidentialite" element={<PolitiqueConfidentialite />} />
+          <Route path="/politique-des-cookies" element={<PolitiqueCookies />} />
+          <Route path="/plan-du-site" element={<PlanDuSite />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

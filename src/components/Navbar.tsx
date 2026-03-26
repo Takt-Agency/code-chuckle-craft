@@ -63,6 +63,10 @@ const navItems: NavItem[] = [
       { label: "Excursions", to: "/sejour-jeunes/excursions" },
     ],
   },
+  {
+    label: "CONTACTEZ-NOUS",
+    to: "/contactez-nous",
+  },
 ];
 
 const DesktopDropdown = ({ item }: { item: NavItem }) => {
@@ -144,7 +148,7 @@ const Navbar = () => {
       </Link>
 
       {/* Desktop nav */}
-      <div className="hidden xl:flex items-center gap-5 2xl:gap-6">
+      <div className="hidden xl:flex items-center gap-5 2xl:gap-6 ml-12 2xl:ml-16">
         {navItems.map((item) => (
           <DesktopDropdown key={item.label} item={item} />
         ))}
