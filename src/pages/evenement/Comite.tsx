@@ -99,26 +99,35 @@ const Comite = () => (
       >
         {members.map((m) => (
           <StaggerItem key={m.name}>
-            <div className="bg-card border border-border rounded-lg overflow-hidden text-center group hover:border-primary transition-colors">
-              {/* Photo */}
-              <div className="h-52 bg-secondary flex items-center justify-center overflow-hidden">
-                {m.photo ? (
-                  <img
-                    src={m.photo}
-                    alt={m.name}
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                ) : (
-                  <div className="w-24 h-24 rounded-full bg-muted flex items-center justify-center">
-                    <span className="text-3xl text-muted-foreground font-heading">
-                      {m.name.charAt(0)}
-                    </span>
+            <div className="text-center group py-4">
+              {/* Photo losange */}
+              <div className="flex justify-center mb-5">
+                <div className="relative w-36 h-36">
+                  {/* Border losange */}
+                  <div className="absolute inset-0 rotate-45 border-2 border-primary/40 group-hover:border-primary transition-colors duration-500" />
+                  {/* Image losange */}
+                  <div className="absolute inset-2 rotate-45 overflow-hidden bg-secondary">
+                    {m.photo ? (
+                      <img
+                        src={m.photo}
+                        alt={m.name}
+                        className="w-[140%] h-[140%] object-cover object-top -rotate-45 scale-110 -translate-x-[14%] -translate-y-[14%] group-hover:scale-125 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center -rotate-45">
+                        <span className="text-3xl text-muted-foreground font-heading">
+                          {m.name.charAt(0)}
+                        </span>
+                      </div>
+                    )}
                   </div>
-                )}
+                  {/* Petit losange accent en bas */}
+                  <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 rotate-45 bg-accent" />
+                </div>
               </div>
               {/* Info */}
-              <div className="p-5">
+              <div className="mt-2">
                 <h3 className="font-display text-foreground font-bold text-lg">{m.name}</h3>
                 <p className="text-primary text-xs uppercase tracking-widest font-bold mt-1 mb-2">
                   {m.role}

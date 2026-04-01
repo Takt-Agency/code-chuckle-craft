@@ -4,6 +4,8 @@ import AnimatedSection, { StaggerContainer, StaggerItem } from "@/components/Ani
 import hotelImg from "@/assets/hotel-regency.jpg";
 import { Link } from "react-router-dom";
 import { Newspaper, Camera, Video, Bus, Hotel } from "lucide-react";
+import CountdownSection from "@/components/CountdownSection";
+import CarthageSection from "@/components/CarthageSection";
 
 const partnerLogos = [
   { src: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/09/logo-medina_hotels-_fond-bleu-ai-1024x403.webp", alt: "Médina Hôtels", href: "#" },
@@ -20,6 +22,10 @@ const partnerLogos = [
 const Index = () => (
   <div className="min-h-screen flex flex-col">
     <HeroSection />
+
+    <CountdownSection />
+
+    <CarthageSection />
 
     {/* Quick Actions - Verdi + Navette */}
     <section className="bg-background py-10 md:py-14">

@@ -48,13 +48,7 @@ const navItems: NavItem[] = [
       { label: "Venir en Tunisie", to: "/infos-pratiques/venir" },
       { label: "Rejoindre l'hôtel", to: "/infos-pratiques/rejoindre" },
       { label: "Découvrir la Tunisie", to: "/infos-pratiques/decouvrir" },
-    ],
-  },
-  {
-    label: "PARTENAIRES",
-    to: "/partenaires",
-    children: [
-      { label: "Devenir partenaire", to: "/partenaires/devenir" },
+      { label: "Partenaires", to: "/partenaires" },
     ],
   },
   {
@@ -138,13 +132,28 @@ const DesktopDropdown = ({ item }: { item: NavItem }) => {
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [expandedMobile, setExpandedMobile] = useState<string | null>(null);
+  const [isFixed, setIsFixed] = useState(false);
   const location = useLocation();
 
   // Close mobile menu on route change
   useEffect(() => { setOpen(false); setExpandedMobile(null); }, [location.pathname]);
 
+  useEffect(() => {
+    const handleScroll = () => setIsFixed(window.scrollY > 0);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="flex items-center justify-between px-4 md:px-8 py-4 relative">
+    <>
+      <nav
+        className={`flex items-center justify-between px-4 md:px-8 py-4 transition-all duration-200 ${
+          isFixed
+            ? "fixed inset-x-0 top-0 z-50 border-b border-border bg-background/95 backdrop-blur-md shadow-sm"
+            : "relative"
+        }`}
+      >
       <Link to="/" className="flex items-center gap-3 shrink-0">
         <img src={logo} alt="Logo CDM Scrabble 2026" className="h-12 md:h-16 object-contain" />
       </Link>
@@ -170,7 +179,7 @@ const Navbar = () => {
               {item.children ? (
                 <>
                   <button
-                    className="w-full flex items-center justify-between px-6 py-3 nav-link text-sm"
+                    className="w-full flex items-center justify-between px-6 py-3 nav-link text-xs"
                     onClick={() =>
                       setExpandedMobile(expandedMobile === item.label ? null : item.label)
                     }
@@ -205,7 +214,7 @@ const Navbar = () => {
                   )}
                 </>
               ) : (
-                <Link to={item.to!} className="block px-6 py-3 nav-link text-sm">
+                <Link to={item.to!} className="block px-6 py-3 nav-link text-xs">
                   {item.label}
                 </Link>
               )}
@@ -214,6 +223,8 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+    {isFixed && <div className="h-20 md:h-20" aria-hidden="true" />}
+  </>
   );
 };
 
