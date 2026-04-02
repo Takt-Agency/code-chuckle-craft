@@ -34,7 +34,7 @@ const Programme = () => (
         <div className="bg-card border border-border rounded-lg overflow-hidden">
           <img
             src={IMAGE_URL}
-            alt="Programme officiel des 54es Championnats du Monde de Scrabble Francophone – Tunis 2026"
+            alt="Programme officiel des 54es Championnats du Monde de Scrabble® Francophone – Tunis 2026"
             className="w-full h-auto"
             loading="lazy"
           />

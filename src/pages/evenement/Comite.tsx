@@ -1,83 +1,62 @@
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection, { StaggerContainer, StaggerItem } from "@/components/AnimatedSection";
+import imgJeanneret from "@/assets/img/jeanneret.png";
+import imgOssinou from "@/assets/img/ossinou.png";
+import imgDieng from "@/assets/img/dieng.png";
+import imgGuizani from "@/assets/img/guizani.png";
+import imgBrenez from "@/assets/img/brenez.png";
+import imgBouzgarrou from "@/assets/img/bouzgarrou.png";
+import imgAtallah from "@/assets/img/atallah.png";
 
 const members = [
   {
-    name: "Patrice Jeanneret",
+    name: "P. Jeanneret",
     role: "Président",
     country: "Suisse",
     flag: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/08/switzerland-flag-icon-32.webp",
-    photo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/06/patrice-jeanneret.jpeg",
+    photo: imgJeanneret,
   },
   {
-    name: "Olivier Assinou",
-    role: "1er Vice Président",
-    country: "Bénin",
-    flag: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/08/benin-flag-icon-32.webp",
-    photo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/06/olivier-assinou.jpeg",
-  },
-  {
-    name: "Rokhaya Dieng",
-    role: "Secrétaire Générale",
-    country: "Sénégal",
-    flag: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/08/senegal-flag-icon-32.webp",
-    photo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/10/rokhaya_dieng-205x300.webp",
-  },
-  {
-    name: "Walid Guizani",
-    role: "2ème Vice Président",
+    name: "W. Guizani",
+    role: "Co-Président",
     country: "Tunisie",
     flag: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/08/tunisia-flag-icon-32.webp",
-    photo: null,
+    photo: imgGuizani,
   },
   {
-    name: "Yves Brenez",
+    name: "R. Dieng",
+    role: "Secrétaire",
+    country: "Sénégal",
+    flag: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/08/senegal-flag-icon-32.webp",
+    photo: imgDieng,
+  },
+  {
+    name: "O. Assinou",
+    role: "Directeur Exécutif – FISF",
+    country: "Bénin",
+    flag: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/08/benin-flag-icon-32.webp",
+    photo: imgOssinou,
+  },
+  {
+    name: "H. Atallah",
+    role: "Président de l'ASTUS",
+    country: "Tunisie",
+    flag: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/08/tunisia-flag-icon-32.webp",
+    photo: imgAtallah,
+  },
+  {
+    name: "R. Bouzgarrou",
+    role: "Marketing",
+    country: "Tunisie",
+    flag: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/08/tunisia-flag-icon-32.webp",
+    photo: imgBouzgarrou,
+  },
+  {
+    name: "Y. Brenez",
     role: "Trésorier",
     country: "Belgique",
     flag: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/08/belgium-flag-icon-32.webp",
-    photo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/06/yves-brenez.jpeg",
-  },
-  {
-    name: "Danièle Mekuate",
-    role: "Communication - Promotion",
-    country: "Cameroun",
-    flag: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/08/cameroon-flag-icon-32.webp",
-    photo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/06/daniele-mekuate.jpeg",
-  },
-  {
-    name: "J.Jacques Capdeville",
-    role: "Site web",
-    country: "France",
-    flag: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/08/france-flag-icon-32.webp",
-    photo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/09/jean-jacques-200x300.webp",
-  },
-  {
-    name: "Orphée Visvikis",
-    role: "Organisation Classique",
-    country: "Grèce",
-    flag: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/08/greece-flag-icon-32.webp",
-    photo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/06/orphee-visvikis.jpeg",
-  },
-  {
-    name: "Benoît Delafontaine",
-    role: "Séjour des jeunes",
-    country: "Suisse",
-    flag: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/08/switzerland-flag-icon-32.webp",
-    photo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/06/benoit-delafontaine.jpg",
-  },
-  {
-    name: "Louis Eggermont",
-    role: "Organisation Duplicate",
-    country: "Belgique",
-    flag: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/08/belgium-flag-icon-32.webp",
-    photo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/12/louis-eggermont-768x1024.webp",
-  },
-  {
-    name: "Christian Couvreur",
-    role: "Arbitrage Duplicate",
-    country: "France",
-    flag: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/08/france-flag-icon-32.webp",
-    photo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/06/christian-couvreur.jpg",
+    photo: imgBrenez,
   },
 ];
 
@@ -87,35 +66,41 @@ const Comite = () => (
       <AnimatedSection variant="fade-up">
         <div className="text-center mb-14">
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Le Comité d'Organisation des 54<sup>es</sup> Championnats du Monde de Scrabble
+            Le Comité d'Organisation des 54<sup>es</sup> Championnats du Monde de Scrabble®
             Francophone réunit des membres de plusieurs pays francophones.
           </p>
         </div>
       </AnimatedSection>
 
       <StaggerContainer
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="flex flex-wrap justify-center gap-6"
         staggerDelay={0.08}
       >
         {members.map((m) => (
-          <StaggerItem key={m.name}>
+          <StaggerItem key={m.name} className="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
             <div className="text-center group py-4">
               {/* Photo losange */}
               <div className="flex justify-center mb-5">
-                <div className="relative w-36 h-36">
+                <div className="relative w-40 h-40">
                   {/* Border losange */}
-                  <div className="absolute inset-0 rotate-45 border-2 border-primary/40 group-hover:border-primary transition-colors duration-500" />
+                  <div
+                    className="absolute inset-0 border-2 border-primary/40 group-hover:border-primary transition-colors duration-500"
+                    style={{ clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)" }}
+                  />
                   {/* Image losange */}
-                  <div className="absolute inset-2 rotate-45 overflow-hidden bg-secondary">
+                  <div
+                    className="absolute inset-[6px] overflow-hidden bg-secondary"
+                    style={{ clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)" }}
+                  >
                     {m.photo ? (
                       <img
                         src={m.photo}
                         alt={m.name}
-                        className="w-[140%] h-[140%] object-cover object-top -rotate-45 scale-110 -translate-x-[14%] -translate-y-[14%] group-hover:scale-125 transition-transform duration-500"
+                        className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
                         loading="lazy"
                       />
                     ) : (
-                      <div className="w-full h-full flex items-center justify-center -rotate-45">
+                      <div className="w-full h-full flex items-center justify-center">
                         <span className="text-3xl text-muted-foreground font-heading">
                           {m.name.charAt(0)}
                         </span>

@@ -9,9 +9,9 @@ const Footer = () => (
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Logo & Info */}
           <div className="flex flex-col items-center md:items-start gap-4">
-            <img src={logo} alt="Logo CDM Scrabble 2026" className="h-16 object-contain" />
+            <img src={logo} alt="Logo CDM Scrabble® 2026" className="h-16 object-contain" />
             <p className="text-muted-foreground text-sm text-center md:text-left">
-              54<sup>es</sup> Championnats du Monde de Scrabble Francophone<br />
+              54<sup>es</sup> Championnats du Monde de Scrabble® Francophone<br />
               18–26 juillet 2026 · Tunis, Tunisie
             </p>
           </div>
@@ -69,7 +69,7 @@ const Footer = () => (
       <div className="border-t border-border mt-10 pt-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-xs order-2 md:order-1">
-            © 2026 Championnats du Monde de Scrabble Francophone — Tous droits réservés
+            © 2026 Championnats du Monde de Scrabble® Francophone — Tous droits réservés
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 order-1 md:order-2">
             {[

@@ -11,7 +11,7 @@ const Reservations = () => (
         </h3>
         <p className="text-muted-foreground max-w-lg mx-auto leading-relaxed mb-6">
           Retrouvez la liste des réservations effectuées pour les Championnats du Monde 
-          de Scrabble Francophone 2026.
+          de Scrabble® Francophone 2026.
         </p>
         <a
           href="https://www.tunis-cdm-scrabble-2026.org/reservations-effectuees/"

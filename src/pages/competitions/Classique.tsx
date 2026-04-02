@@ -1,13 +1,13 @@
 import PageLayout from "@/components/PageLayout";
 
 const Classique = () => (
-  <PageLayout title="Épreuves Classique" subtitle="Scrabble classique individuel">
+  <PageLayout title="Épreuves Classique" subtitle="Scrabble® classique individuel">
     <div className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-20">
       <div className="bg-card border border-border rounded-lg p-8 md:p-12 mb-8">
-        <h3 className="font-heading text-2xl italic text-foreground mb-4">Le Scrabble Classique</h3>
+        <h3 className="font-heading text-2xl italic text-foreground mb-4">Le Scrabble® Classique</h3>
         <div className="space-y-4 text-muted-foreground leading-relaxed">
           <p>
-            Le Scrabble classique est le format traditionnel du jeu. Chaque joueur tire ses propres lettres 
+            Le Scrabble® classique est le format traditionnel du jeu. Chaque joueur tire ses propres lettres 
             et doit former des mots sur le plateau en fonction de son tirage personnel.
           </p>
           <p>

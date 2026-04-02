@@ -13,10 +13,10 @@ const DefiMondial = () => (
             <h2 className="font-display text-foreground font-bold text-2xl">Présentation</h2>
           </div>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Le <span className="text-foreground font-semibold">Défi mondial</span> est une compétition de prestige organisée en marge des 54<sup>es</sup> Championnats du Monde de Scrabble Francophone. Elle rassemble les meilleurs joueurs du monde pour des parties d'une intensité exceptionnelle dans un format d'élimination directe.
+            Le <span className="text-foreground font-semibold">Défi mondial</span> est une compétition de prestige organisée en marge des 54<sup>es</sup> Championnats du Monde de Scrabble® Francophone. Elle rassemble les meilleurs joueurs du monde pour des parties d'une intensité exceptionnelle dans un format d'élimination directe.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Cette épreuve est l'occasion pour les grands champions de se défier dans un cadre spectaculaire, offrant au public un Scrabble de très haut niveau.
+            Cette épreuve est l'occasion pour les grands champions de se défier dans un cadre spectaculaire, offrant au public un Scrabble® de très haut niveau.
           </p>
         </div>
       </AnimatedSection>

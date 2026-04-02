@@ -7,7 +7,7 @@ const PolitiqueConfidentialite = () => (
       <section className="bg-card border border-border rounded-lg p-8 space-y-4">
         <h2 className="font-display text-foreground font-bold text-xl">Introduction</h2>
         <p className="text-muted-foreground text-sm leading-relaxed">
-          La Fédération Internationale de Scrabble Francophone (FISF), en tant que responsable de traitement, s'engage à protéger la vie privée des utilisateurs du site{" "}
+          La Fédération Internationale de Scrabble® Francophone (FISF), en tant que responsable de traitement, s'engage à protéger la vie privée des utilisateurs du site{" "}
           <a href="https://www.tunis-cdm-scrabble-2026.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
             www.tunis-cdm-scrabble-2026.org
           </a>.
@@ -47,7 +47,7 @@ const PolitiqueConfidentialite = () => (
           Les informations recueillies sur le formulaire sont enregistrées dans un fichier informatisé afin de :
         </p>
         <ul className="text-muted-foreground text-sm space-y-1 list-disc list-inside leading-relaxed">
-          <li>Répondre aux demandes d'information relatives aux Championnats du Monde de Scrabble Francophone</li>
+          <li>Répondre aux demandes d'information relatives aux Championnats du Monde de Scrabble® Francophone</li>
           <li>Assurer le suivi des demandes</li>
           <li>Améliorer nos services</li>
         </ul>
@@ -63,7 +63,7 @@ const PolitiqueConfidentialite = () => (
       <section className="bg-card border border-border rounded-lg p-8 space-y-4">
         <h2 className="font-display text-foreground font-bold text-xl">Destinataires des données</h2>
         <p className="text-muted-foreground text-sm leading-relaxed">
-          Vos données personnelles sont destinées au comité d'organisation des 54<sup>es</sup> Championnats du Monde de Scrabble Francophone. Elles sont traitées par le responsable de la gestion commerciale, membre habilité de la société <span className="text-foreground font-semibold">Skaleet</span>, prestataire technique du site.
+          Vos données personnelles sont destinées au comité d'organisation des 54<sup>es</sup> Championnats du Monde de Scrabble® Francophone. Elles sont traitées par le responsable de la gestion commerciale, membre habilité de la société <span className="text-foreground font-semibold">Skaleet</span>, prestataire technique du site.
         </p>
         <p className="text-muted-foreground text-sm leading-relaxed">
           Elles ne sont pas transmises à d'autres tiers sans votre consentement préalable, sauf obligation légale.

@@ -18,7 +18,7 @@ const Historique = () => (
     <div className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-20">
       <div className="text-center mb-12">
         <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Depuis plus de 50 ans, les Championnats du Monde de Scrabble Francophone 
+          Depuis plus de 50 ans, les Championnats du Monde de Scrabble® Francophone 
           rassemblent les meilleurs joueurs du monde entier dans des villes emblématiques.
         </p>
       </div>

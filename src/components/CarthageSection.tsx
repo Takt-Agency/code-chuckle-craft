@@ -1,5 +1,5 @@
 import AnimatedSection from "@/components/AnimatedSection";
-import carthageImg from "@/assets/carthage.png";
+import carthageImg from "@/assets/img/2.webp";
 
 const stats = [
   { value: "30+", label: "Nations" },
@@ -41,7 +41,7 @@ const CarthageSection = () => (
             <p>
               Entre héritage phénicien et langue moderne,{" "}
               <strong className="text-foreground not-italic">
-                le Scrabble trouve à Carthage son arène mythique.
+                le Scrabble® trouve à Carthage son arène mythique.
               </strong>
             </p>
           </div>
@@ -68,7 +68,7 @@ const CarthageSection = () => (
             <div className="w-full rounded-lg overflow-hidden shadow-2xl">
               <img
                 src={carthageImg}
-                alt="Colonnes de Carthage – Scrabble Tunis 2026"
+                alt="Colonnes de Carthage – Scrabble® Tunis 2026"
                 className="w-full h-[350px] md:h-[480px] object-cover"
                 loading="lazy"
               />

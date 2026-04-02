@@ -13,7 +13,7 @@ const Animations = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {[
-          { icon: Trophy, title: "Tournois Jeunes", desc: "Compétitions de Scrabble adaptées au niveau des jeunes joueurs, avec classement et remise de prix." },
+          { icon: Trophy, title: "Tournois Jeunes", desc: "Compétitions de Scrabble® adaptées au niveau des jeunes joueurs, avec classement et remise de prix." },
           { icon: Gamepad2, title: "Jeux et ateliers", desc: "Ateliers ludiques autour des mots, jeux de société, défis vocabulaire et quiz interactifs." },
           { icon: Palette, title: "Activités créatives", desc: "Ateliers artistiques, calligraphie arabe, initiation à la mosaïque tunisienne." },
           { icon: Music, title: "Soirées", desc: "Soirées à thème, spectacles et moments de convivialité entre jeunes de tous les pays." },

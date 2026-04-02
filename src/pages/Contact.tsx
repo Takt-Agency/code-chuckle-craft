@@ -33,78 +33,80 @@ const Contact = () => {
     <PageLayout title="Contactez-nous" subtitle="Une question ? Écrivez-nous">
       <div className="max-w-6xl mx-auto px-4 md:px-8 py-12 md:py-20">
 
-        {/* Top info cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-14">
-          <div className="bg-card border border-border rounded-lg p-8">
-            <h3 className="font-display text-foreground font-bold text-xl mb-6">Comité d'Organisation</h3>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-foreground font-bold text-sm">Lieu de l'événement</p>
-                  <p className="text-muted-foreground text-sm">Regency Tunis Hôtel, Gammarth, Tunis, Tunisie</p>
+        {/* Two-column layout: Info left + Form right */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-8 mb-14">
+          {/* Left – Info cards */}
+          <div className="space-y-8">
+            <div className="bg-card border border-border rounded-lg p-8">
+              <h3 className="font-display text-foreground font-bold text-xl mb-6">Comité d'Organisation</h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-foreground font-bold text-sm">Lieu de l'événement</p>
+                    <p className="text-muted-foreground text-sm">Regency Tunis Medina Hotels &amp; Resorts, Tunis, Tunisie</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Mail className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-foreground font-bold text-sm">Email</p>
+                    <a
+                      href="mailto:contact@tunis-cdm-scrabble-2026.org"
+                      className="text-primary text-sm hover:underline"
+                    >
+                      contact@tunis-cdm-scrabble-2026.org
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Globe className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-foreground font-bold text-sm">Site officiel</p>
+                    <a
+                      href="https://www.tunis-cdm-scrabble-2026.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary text-sm hover:underline"
+                    >
+                      www.tunis-cdm-scrabble-2026.org
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+            </div>
+
+            <div className="bg-card border border-border rounded-lg p-8">
+              <h3 className="font-display text-foreground font-bold text-xl mb-6">Organisateurs</h3>
+              <div className="space-y-6">
                 <div>
-                  <p className="text-foreground font-bold text-sm">Email</p>
-                  <a
-                    href="mailto:contact@tunis-cdm-scrabble-2026.org"
-                    className="text-primary text-sm hover:underline"
-                  >
-                    contact@tunis-cdm-scrabble-2026.org
+                  <h4 className="text-primary font-bold text-sm mb-1">FISF</h4>
+                  <p className="text-muted-foreground text-sm">Fédération Internationale de Scrabble® Francophone</p>
+                  <p className="text-muted-foreground text-xs">Avenue Minerve 33, 1190 Forest, Belgique</p>
+                  <a href="https://www.fisf.net/" target="_blank" rel="noopener noreferrer" className="text-primary text-xs hover:underline">
+                    www.fisf.net
                   </a>
                 </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Globe className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-foreground font-bold text-sm">Site officiel</p>
-                  <a
-                    href="https://www.tunis-cdm-scrabble-2026.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary text-sm hover:underline"
-                  >
-                    www.tunis-cdm-scrabble-2026.org
+                  <h4 className="text-primary font-bold text-sm mb-1">ASTUS</h4>
+                  <p className="text-muted-foreground text-sm">Association Scrabble® Tunisie</p>
+                </div>
+                <div>
+                  <h4 className="text-primary font-bold text-sm mb-1">FFSc</h4>
+                  <p className="text-muted-foreground text-sm">Fédération Française de Scrabble®</p>
+                  <a href="https://www.ffscrabble.fr/" target="_blank" rel="noopener noreferrer" className="text-primary text-xs hover:underline">
+                    www.ffscrabble.fr
                   </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-card border border-border rounded-lg p-8">
-            <h3 className="font-display text-foreground font-bold text-xl mb-6">Organisateurs</h3>
-            <div className="space-y-6">
-              <div>
-                <h4 className="text-primary font-bold text-sm mb-1">FISF</h4>
-                <p className="text-muted-foreground text-sm">Fédération Internationale de Scrabble Francophone</p>
-                <p className="text-muted-foreground text-xs">Avenue Minerve 33, 1190 Forest, Belgique</p>
-                <a href="https://www.fisf.net/" target="_blank" rel="noopener noreferrer" className="text-primary text-xs hover:underline">
-                  www.fisf.net
-                </a>
-              </div>
-              <div>
-                <h4 className="text-primary font-bold text-sm mb-1">ASTUS</h4>
-                <p className="text-muted-foreground text-sm">Association Scrabble Tunisie</p>
-              </div>
-              <div>
-                <h4 className="text-primary font-bold text-sm mb-1">FFSc</h4>
-                <p className="text-muted-foreground text-sm">Fédération Française de Scrabble</p>
-                <a href="https://www.ffscrabble.fr/" target="_blank" rel="noopener noreferrer" className="text-primary text-xs hover:underline">
-                  www.ffscrabble.fr
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Contact Form */}
-        <div className="bg-card border border-border rounded-lg p-8 md:p-12 mb-14">
+          {/* Right – Contact Form */}
+          <div className="bg-card border border-border rounded-lg p-8 md:p-12">
           <h2 className="font-display text-foreground font-bold text-2xl mb-2">Formulaire de contact</h2>
           <p className="text-muted-foreground text-sm mb-8">
-            Utilisez ce formulaire pour toute demande d'information relative aux 54<sup>es</sup> Championnats du Monde de Scrabble Francophone.
+            Utilisez ce formulaire pour toute demande d'information relative aux 54<sup>es</sup> Championnats du Monde de Scrabble® Francophone.
           </p>
 
           {submitted ? (
@@ -257,6 +259,7 @@ const Contact = () => {
               </div>
             </form>
           )}
+          </div>
         </div>
 
         {/* Media Section */}

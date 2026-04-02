@@ -1,22 +1,23 @@
 import PageLayout from "@/components/PageLayout";
+import nexiaLogo from "@/assets/img/logo.png";
 
 const partners = [
   {
-    name: "ASTUS – Association Scrabble Tunisie",
+    name: "ASTUS – Association Scrabble® Tunisie",
     logo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/06/logo_astus-300x87.webp",
-    desc: "Association organisatrice locale des championnats, représentant le Scrabble en Tunisie.",
+    desc: "Association organisatrice locale des championnats, représentant le Scrabble® en Tunisie.",
     url: "https://www.facebook.com/Scrabble-Tunisie-578053995984801",
   },
   {
-    name: "Fédération Française de Scrabble",
+    name: "Fédération Française de Scrabble®",
     logo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/12/logo_federationscrabble-horizontale-rvb.webp",
-    desc: "La FFSc regroupe les joueurs licenciés de Scrabble de France avec plus de 14 000 licenciés dans plus de 900 clubs.",
+    desc: "La FFSc regroupe les joueurs licenciés de Scrabble® de France avec plus de 14 000 licenciés dans plus de 900 clubs.",
     url: "https://www.ffscrabble.fr/",
   },
   {
-    name: "FISF – Fédération Internationale de Scrabble Francophone",
+    name: "FISF – Fédération Internationale de Scrabble® Francophone",
     logo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/09/fisf_logo_4lignes_rvb.webp",
-    desc: "Association réunissant les amateurs du jeu Scrabble, établie en 1978, comptant 24 pays et environ 23 000 licenciés.",
+    desc: "Association réunissant les amateurs du jeu Scrabble®, établie en 1978, comptant 24 pays et environ 23 000 licenciés.",
     url: "https://www.fisf.net/",
   },
   {
@@ -40,13 +41,13 @@ const partners = [
   {
     name: "Larousse",
     logo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/06/logo_larousse.webp",
-    desc: "Maison d'édition fondée en 1852, éditeur du dictionnaire de référence pour le Scrabble francophone.",
+    desc: "Maison d'édition fondée en 1852, éditeur du dictionnaire de référence pour le Scrabble® francophone.",
     url: "https://www.larousse.fr/",
   },
   {
     name: "Mattel",
     logo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/06/logo_mattel.webp",
-    desc: "Fabricant mondial de jouets, éditeur du Scrabble pour les marchés hors Amérique du Nord.",
+    desc: "Fabricant mondial de jouets, éditeur du Scrabble® pour les marchés hors Amérique du Nord.",
     url: "https://lesjouetsmattel.fr/",
   },
   {
@@ -54,6 +55,12 @@ const partners = [
     logo: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/12/logo_-_dgwb_tunisie.webp",
     desc: "Représentation diplomatique de Wallonie-Bruxelles, lieu d'accueil et d'échanges avec les partenaires tunisiens.",
     url: "http://www.wallonie-bruxelles.tn/",
+  },
+  {
+    name: "Nexia Digital",
+    logo: nexiaLogo,
+    desc: "Agence digitale spécialisée dans la conception web, le marketing digital et les solutions numériques innovantes. Partenaire technologique de l'événement.",
+    url: "http://nexia-digital.net/",
   },
 ];
 

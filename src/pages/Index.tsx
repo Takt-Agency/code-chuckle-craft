@@ -1,11 +1,13 @@
 import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
 import AnimatedSection, { StaggerContainer, StaggerItem } from "@/components/AnimatedSection";
-import hotelImg from "@/assets/hotel-regency.jpg";
+import hotelImg from "@/assets/img/regency-tunis-hotel.jpg";
+import nexiaLogo from "@/assets/img/logo.png";
 import { Link } from "react-router-dom";
 import { Newspaper, Camera, Video, Bus, Hotel } from "lucide-react";
 import CountdownSection from "@/components/CountdownSection";
 import CarthageSection from "@/components/CarthageSection";
+import LogoSection from "@/components/LogoSection";
 
 const partnerLogos = [
   { src: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/09/logo-medina_hotels-_fond-bleu-ai-1024x403.webp", alt: "Médina Hôtels", href: "#" },
@@ -17,6 +19,7 @@ const partnerLogos = [
   { src: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/12/logo_federationscrabble-horizontale-rvb.webp", alt: "FFSc", href: "https://www.ffscrabble.fr/" },
   { src: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/09/fisf_logo_4lignes_rvb.webp", alt: "FISF", href: "https://www.fisf.net/" },
   { src: "https://www.tunis-cdm-scrabble-2026.org/wp-content/uploads/2025/12/office-du-tourisme-tunisie.webp", alt: "Office du Tourisme", href: "https://www.tourisme.gov.tn/?page_id=3236&lang=fr" },
+  { src: nexiaLogo, alt: "Nexia Digital", href: "http://nexia-digital.net/" },
 ];
 
 const Index = () => (
@@ -26,6 +29,8 @@ const Index = () => (
     <CountdownSection />
 
     <CarthageSection />
+
+    <LogoSection />
 
     {/* Quick Actions - Verdi + Navette */}
     <section className="bg-background py-10 md:py-14">
@@ -76,14 +81,17 @@ const Index = () => (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <AnimatedSection variant="slide-left">
             <h2 className="font-heading text-3xl md:text-4xl italic text-foreground mb-4">
-              Regency Tunis Hôtel
+              Regency Tunis Medina Hotels &amp; Resorts
             </h2>
             <p className="text-primary uppercase tracking-[0.2em] text-sm font-bold mb-6">
-              Gammarth · 5 étoiles
+              Médina de Tunis · 5 étoiles
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Lieu principal de l'événement, le Regency Tunis Hôtel vous accueille dans un cadre luxueux
-              avec chambres de standing, plage privée, piscines extérieures et restaurants de qualité.
+              Lieu principal des 54<sup>es</sup> Championnats du Monde de Scrabble® Francophone,
+              le Regency Tunis Medina Hotels &amp; Resorts allie le charme historique de la Médina
+              à un confort haut de gamme. Chambres et suites élégantes, spa, salles de conférence
+              équipées et restaurants proposant une gastronomie tunisienne et internationale —
+              le cadre idéal pour vivre pleinement l'événement.
             </p>
             <div className="flex items-center gap-4 mb-6">
               <img
@@ -101,7 +109,7 @@ const Index = () => (
             <div className="rounded-lg overflow-hidden">
               <img
                 src={hotelImg}
-                alt="Regency Tunis Hôtel"
+                alt="Regency Tunis Medina Hotels & Resorts"
                 className="w-full h-64 md:h-80 object-cover"
                 loading="lazy"
                 width={1280}

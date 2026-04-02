@@ -375,7 +375,7 @@ const VerdiRoomPage = ({
                     </thead>
                     <tbody>
                       <tr className="border-b border-border">
-                        <td className="py-3 text-foreground">54<sup>es</sup> CDM Scrabble</td>
+                        <td className="py-3 text-foreground">54<sup>es</sup> CDM Scrabble®</td>
                         <td className="py-3 text-muted-foreground">{arrivalDate}</td>
                         <td className="py-3 text-muted-foreground">{departureDate}</td>
                         <td className="py-3 text-right text-primary font-bold">

@@ -155,7 +155,7 @@ const Navbar = () => {
         }`}
       >
       <Link to="/" className="flex items-center gap-3 shrink-0">
-        <img src={logo} alt="Logo CDM Scrabble 2026" className="h-12 md:h-16 object-contain" />
+        <img src={logo} alt="Logo CDM Scrabble® 2026" className="h-12 md:h-16 object-contain" />
       </Link>
 
       {/* Desktop nav */}

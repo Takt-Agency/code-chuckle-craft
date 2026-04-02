@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Plane, Car, MapPin, Bus } from "lucide-react";
+import airportImg from "@/assets/tunisie/airport tuni carthage.png";
 
 const Rejoindre = () => {
   const [form, setForm] = useState({
@@ -29,6 +30,18 @@ const Rejoindre = () => {
   return (
     <PageLayout title="Rejoindre l'hôtel" subtitle="Transferts et transport">
       <div className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-20">
+        {/* Hero image */}
+        <AnimatedSection variant="fade-up">
+          <div className="rounded-lg overflow-hidden mb-12">
+            <img
+              src={airportImg}
+              alt="Aéroport Tunis Carthage"
+              className="w-full h-64 md:h-80 object-cover object-top"
+              loading="lazy"
+            />
+          </div>
+        </AnimatedSection>
+
         {/* Shuttle reservation form */}
         <AnimatedSection variant="fade-up">
           <div className="bg-card border border-border rounded-lg p-6 md:p-8 mb-8">

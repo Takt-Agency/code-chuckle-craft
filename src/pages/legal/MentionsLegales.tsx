@@ -7,7 +7,7 @@ const MentionsLegales = () => (
       <section className="bg-card border border-border rounded-lg p-8 space-y-4">
         <h2 className="font-display text-foreground font-bold text-xl">Éditeur du site</h2>
         <div className="text-muted-foreground text-sm space-y-1 leading-relaxed">
-          <p><span className="text-foreground font-semibold">Dénomination :</span> Fédération Internationale de Scrabble Francophone (FISF)</p>
+          <p><span className="text-foreground font-semibold">Dénomination :</span> Fédération Internationale de Scrabble® Francophone (FISF)</p>
           <p><span className="text-foreground font-semibold">Adresse :</span> Avenue Minerve 33, 1190 Forest, Belgique</p>
           <p><span className="text-foreground font-semibold">Email :</span>{" "}
             <a href="mailto:contact@tunis-cdm-scrabble-2026.org" className="text-primary hover:underline">
@@ -25,9 +25,9 @@ const MentionsLegales = () => (
       <section className="bg-card border border-border rounded-lg p-8 space-y-4">
         <h2 className="font-display text-foreground font-bold text-xl">Co-organisateur</h2>
         <div className="text-muted-foreground text-sm space-y-2 leading-relaxed">
-          <p><span className="text-foreground font-semibold">Dénomination :</span> Association Scrabble Tunisie (ASTUS)</p>
+          <p><span className="text-foreground font-semibold">Dénomination :</span> Association Scrabble® Tunisie (ASTUS)</p>
           <p><span className="text-foreground font-semibold">Pays :</span> Tunisie</p>
-          <p>En partenariat avec la Fédération Française de Scrabble (FFSc) —{" "}
+          <p>En partenariat avec la Fédération Française de Scrabble® (FFSc) —{" "}
             <a href="https://www.ffscrabble.fr/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
               www.ffscrabble.fr
             </a>

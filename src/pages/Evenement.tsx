@@ -7,11 +7,11 @@ const Evenement = () => (
       {/* Intro */}
       <div className="text-center mb-16">
         <h2 className="font-heading text-3xl md:text-4xl italic text-foreground mb-6">
-          54es Championnats du Monde de Scrabble Francophone
+          54es Championnats du Monde de Scrabble® Francophone
         </h2>
         <p className="text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Les 54es Championnats du Monde de Scrabble Francophone se tiendront du 18 au 26 juillet 2026 
-          au Regency Tunis Hôtel à Gammarth, Tunisie. Cet événement majeur du Scrabble francophone 
+          Les 54es Championnats du Monde de Scrabble® Francophone se tiendront du 18 au 26 juillet 2026 
+          au Regency Tunis Hôtel à Gammarth, Tunisie. Cet événement majeur du Scrabble® francophone 
           réunira les meilleurs joueurs du monde entier pour une semaine de compétition intense.
         </p>
       </div>
@@ -37,8 +37,8 @@ const Evenement = () => (
         <h3 className="font-heading text-2xl italic text-foreground mb-4">À propos de l'événement</h3>
         <div className="space-y-4 text-muted-foreground leading-relaxed">
           <p>
-            Organisé conjointement par la Fédération Internationale de Scrabble Francophone (FISF) 
-            et l'Association Scrabble Tunisie (ASTUS), cet événement promet d'être une édition 
+            Organisé conjointement par la Fédération Internationale de Scrabble® Francophone (FISF) 
+            et l'Association Scrabble® Tunisie (ASTUS), cet événement promet d'être une édition 
             mémorable dans le cadre enchanteur de la Tunisie.
           </p>
           <p>

@@ -4,7 +4,7 @@ const Duplicate = () => (
   <PageLayout title="Épreuves Duplicate" subtitle="Même tirage pour tous">
     <div className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-20">
       <div className="bg-card border border-border rounded-lg p-8 md:p-12 mb-8">
-        <h3 className="font-heading text-2xl italic text-foreground mb-4">Le Scrabble Duplicate</h3>
+        <h3 className="font-heading text-2xl italic text-foreground mb-4">Le Scrabble® Duplicate</h3>
         <div className="space-y-4 text-muted-foreground leading-relaxed">
           <p>
             En Duplicate, tous les joueurs disposent du même tirage de lettres au même moment. 

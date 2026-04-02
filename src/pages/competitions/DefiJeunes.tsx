@@ -13,10 +13,10 @@ const DefiJeunes = () => (
             <h2 className="font-display text-foreground font-bold text-2xl">Présentation</h2>
           </div>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Le <span className="text-foreground font-semibold">Défi des Jeunes</span> est une compétition spécialement conçue pour les joueurs de <span className="text-foreground font-semibold">moins de 18 ans</span>, organisée en parallèle du Défi mondial pendant les 54<sup>es</sup> Championnats du Monde de Scrabble Francophone à Tunis.
+            Le <span className="text-foreground font-semibold">Défi des Jeunes</span> est une compétition spécialement conçue pour les joueurs de <span className="text-foreground font-semibold">moins de 18 ans</span>, organisée en parallèle du Défi mondial pendant les 54<sup>es</sup> Championnats du Monde de Scrabble® Francophone à Tunis.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Reprenant le même format d'élimination que le Défi mondial, cette épreuve met en valeur les jeunes talents du Scrabble francophone et leur offre une scène internationale exceptionnelle pour briller.
+            Reprenant le même format d'élimination que le Défi mondial, cette épreuve met en valeur les jeunes talents du Scrabble® francophone et leur offre une scène internationale exceptionnelle pour briller.
           </p>
         </div>
       </AnimatedSection>
@@ -57,7 +57,7 @@ const DefiJeunes = () => (
             <Star className="w-7 h-7 text-primary mb-4" />
             <h3 className="font-display text-foreground font-bold text-lg mb-3">Un tremplin vers l'élite</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Le Défi des Jeunes est bien plus qu'une simple compétition : c'est une vitrine internationale pour les futures stars du Scrabble francophone. Les performances dans cette épreuve peuvent lancer une carrière au plus haut niveau.
+              Le Défi des Jeunes est bien plus qu'une simple compétition : c'est une vitrine internationale pour les futures stars du Scrabble® francophone. Les performances dans cette épreuve peuvent lancer une carrière au plus haut niveau.
             </p>
           </div>
         </StaggerItem>

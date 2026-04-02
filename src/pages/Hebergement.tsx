@@ -1,5 +1,5 @@
 import PageLayout from "@/components/PageLayout";
-import hotelImg from "@/assets/hotel-regency.jpg";
+import hotelImg from "@/assets/img/regency-tunis-hotel.jpg";
 import { Hotel, Plane } from "lucide-react";
 
 const Hebergement = () => (
@@ -9,7 +9,7 @@ const Hebergement = () => (
       <div className="rounded-lg overflow-hidden mb-12">
         <img
           src={hotelImg}
-          alt="Regency Tunis Hôtel"
+          alt="Regency Tunis Medina Hotels & Resorts"
           className="w-full h-64 md:h-96 object-cover"
           loading="lazy"
           width={1280}
@@ -30,13 +30,12 @@ const Hebergement = () => (
         {/* Regency */}
         <div className="bg-card border border-border rounded-lg p-8">
           <Hotel className="w-8 h-8 text-primary mb-4" />
-          <h3 className="font-display text-foreground font-bold text-xl mb-3">Regency Tunis Hôtel</h3>
+          <h3 className="font-display text-foreground font-bold text-xl mb-3">Regency Tunis Medina Hotels &amp; Resorts</h3>
           <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-            Établissement 5 étoiles situé à Gammarth, Tunisie. Chambres de luxe, suites, 
-            plage privée, deux piscines extérieures, bain à remous, et plusieurs restaurants 
-            dont le White Elephant proposant une cuisine thaïlandaise.
+            Établissement 5 étoiles au cœur de la Médina de Tunis, alliant charme historique
+            et confort moderne. Chambres élégantes, spa, restaurants et salles de conférence équipées.
           </p>
-          <p className="text-primary text-sm font-bold">Lieu principal de l'événement</p>
+          <p className="text-accent text-sm font-bold">Les 181 chambres sont déjà réservées.</p>
         </div>
 
         {/* Verdi */}
