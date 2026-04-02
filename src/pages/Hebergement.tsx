@@ -10,7 +10,7 @@ const Hebergement = () => (
         <img
           src={hotelImg}
           alt="Regency Tunis Medina Hotels & Resorts"
-          className="w-full h-64 md:h-96 object-cover"
+          className="w-full h-56 md:h-80 lg:h-96 object-cover"
           loading="lazy"
           width={1280}
           height={720}

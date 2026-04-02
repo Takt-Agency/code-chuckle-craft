@@ -58,7 +58,7 @@ const CountdownSection = () => {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-4 gap-3 md:gap-6 max-w-lg mx-auto"
+          className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-6 max-w-lg mx-auto"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

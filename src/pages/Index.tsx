@@ -110,7 +110,7 @@ const Index = () => (
               <img
                 src={hotelImg}
                 alt="Regency Tunis Medina Hotels & Resorts"
-                className="w-full h-64 md:h-80 object-cover"
+                className="w-full h-56 sm:h-64 md:h-80 object-cover"
                 loading="lazy"
                 width={1280}
                 height={720}
@@ -122,7 +122,7 @@ const Index = () => (
     </section>
 
     {/* Partners Section */}
-    <section className="bg-background py-16 md:py-24">
+    <section className="py-16 md:py-24" style={{ backgroundColor: "#781215" }}>
       <div className="max-w-6xl mx-auto px-4 md:px-8 text-center">
         <AnimatedSection variant="fade-up">
           <h2 className="font-heading text-3xl md:text-4xl italic text-foreground mb-4">
@@ -134,7 +134,7 @@ const Index = () => (
             <span className="h-px w-12 bg-primary" />
           </div>
         </AnimatedSection>
-        <StaggerContainer className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-items-center" staggerDelay={0.08}>
+        <StaggerContainer className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center" staggerDelay={0.08}>
           {partnerLogos.map((p) => (
             <StaggerItem key={p.alt}>
               {p.href.startsWith("/") ? (

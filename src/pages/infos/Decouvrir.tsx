@@ -46,7 +46,7 @@ const Decouvrir = () => (
         </div>
       </AnimatedSection>
 
-      <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-8" staggerDelay={0.1}>
+      <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8" staggerDelay={0.1}>
         {discoveries.map((item) => (
           <StaggerItem key={item.title}>
             <div className="bg-card border border-border rounded-lg overflow-hidden group hover:border-primary transition-colors">
@@ -54,7 +54,7 @@ const Decouvrir = () => (
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-40 sm:h-48 md:h-52 object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
               </div>

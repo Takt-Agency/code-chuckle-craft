@@ -21,7 +21,7 @@ const PageLayout = ({ children, title, subtitle }: PageLayoutProps) => (
     <div className="bg-secondary py-12 md:py-20 text-center overflow-hidden">
       <div className="max-w-4xl mx-auto px-4">
         <motion.h1
-          className="font-heading text-4xl md:text-5xl lg:text-6xl font-light italic text-foreground"
+          className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light italic text-foreground"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}

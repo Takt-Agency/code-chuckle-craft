@@ -6,7 +6,7 @@ const Footer = () => (
   <footer className="bg-card border-t border-border">
     <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
       <AnimatedSection variant="fade-up">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-10">
           {/* Logo & Info */}
           <div className="flex flex-col items-center md:items-start gap-4">
             <img src={logo} alt="Logo CDM Scrabble® 2026" className="h-16 object-contain" />

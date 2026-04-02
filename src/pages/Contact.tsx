@@ -34,7 +34,7 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto px-4 md:px-8 py-12 md:py-20">
 
         {/* Two-column layout: Info left + Form right */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-8 mb-14">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-6 md:gap-8 mb-14">
           {/* Left – Info cards */}
           <div className="space-y-8">
             <div className="bg-card border border-border rounded-lg p-8">
@@ -103,7 +103,7 @@ const Contact = () => {
           </div>
 
           {/* Right – Contact Form */}
-          <div className="bg-card border border-border rounded-lg p-8 md:p-12">
+          <div className="bg-card border border-border rounded-lg p-5 md:p-8 lg:p-12">
           <h2 className="font-display text-foreground font-bold text-2xl mb-2">Formulaire de contact</h2>
           <p className="text-muted-foreground text-sm mb-8">
             Utilisez ce formulaire pour toute demande d'information relative aux 54<sup>es</sup> Championnats du Monde de Scrabble® Francophone.

@@ -47,7 +47,7 @@ const CarthageSection = () => (
           </div>
 
           {/* Stats */}
-          <div className="flex gap-8 md:gap-12">
+          <div className="flex gap-4 sm:gap-8 md:gap-12">
             {stats.map((s) => (
               <div key={s.label}>
                 <span className="font-heading text-3xl md:text-4xl text-foreground">
@@ -69,7 +69,7 @@ const CarthageSection = () => (
               <img
                 src={carthageImg}
                 alt="Colonnes de Carthage – Scrabble® Tunis 2026"
-                className="w-full h-[350px] md:h-[480px] object-cover"
+                className="w-full h-[280px] sm:h-[350px] md:h-[480px] object-cover"
                 loading="lazy"
               />
             </div>
